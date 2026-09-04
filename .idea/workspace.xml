@@ -1,4 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a918b1a6-2646-4f8d-b3ca-8146f23bdc9f" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/02/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="9" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.4029515632417018" />
+      <entry key="MS500" value="3.6420792246266496" />
+      <entry key="S2" value="8.760686690888296" />
+      <entry key="S5" value="13.911619611114437" />
+      <entry key="S10" value="18.278237295415515" />
+      <entry key="S30" value="23.734526385964134" />
+      <entry key="S60" value="25.888849765806683" />
+      <entry key="M2" value="29.630760088336096" />
+      <entry key="M5" value="42.10172736158136" />
+      <entry key="M10" value="53.27339987518935" />
+      <entry key="M15" value="58.804008422132775" />
+      <entry key="M30" value="69.03630829206479" />
+      <entry key="H1" value="92.97117662342843" />
+      <entry key="H2" value="135.70826329335912" />
+      <entry key="H4" value="180.75036123570874" />
+      <entry key="D1" value="242.69189517634047" />
+      <entry key="W1" value="256.57328215272486" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="6.153481843289262E-253" />
+      <entry key="S30" value="1.6939971032849534E-84" />
+      <entry key="S60" value="2.241771682409252E-42" />
+      <entry key="M2" value="2.5897155723283462E-21" />
+      <entry key="M5" value="1.1258114035152827E-8" />
+      <entry key="M10" value="1.8473286022962013E-4" />
+      <entry key="M15" value="0.004759786027972269" />
+      <entry key="M30" value="0.12816515439776213" />
+      <entry key="H1" value="0.6951660128638165" />
+      <entry key="H2" value="1.6522411391396066" />
+      <entry key="H4" value="2.5642480708016016" />
+      <entry key="D1" value="3.7129054584454133" />
+      <entry key="W1" value="3.957628423325728" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.3297070671560698" />
+      <entry key="MS500" value="3.603885184175871" />
+      <entry key="S2" value="8.738020861239745" />
+      <entry key="S5" value="13.897371275408233" />
+      <entry key="S10" value="18.26889954298238" />
+      <entry key="S30" value="23.7304800474019" />
+      <entry key="S60" value="25.886620170772414" />
+      <entry key="M2" value="29.629289514341956" />
+      <entry key="M5" value="42.10051142697911" />
+      <entry key="M10" value="53.27265966182808" />
+      <entry key="M15" value="58.8080036541171" />
+      <entry key="M30" value="69.16362822727237" />
+      <entry key="H1" value="93.66470185886678" />
+      <entry key="H2" value="137.35834666381007" />
+      <entry key="H4" value="183.3127763599424" />
+      <entry key="D1" value="246.4043173268928" />
+      <entry key="W1" value="260.5308357850364" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Ire7joFndykO6wu0d3uQXHd89h" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "01-version",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "E:/react/fullstack-vibecoder/fullstack-vibecoder-bot/03",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.set-webhook.executor": "Run",
+    "npm.start.executor": "Run",
+    "settings.editor.selected.configurable": "inlay.hints",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\react\fullstack-vibecoder\fullstack-vibecoder-bot\03" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="set-webhook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/03/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="set-webhook" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/03/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.set-webhook" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.9437.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a918b1a6-2646-4f8d-b3ca-8146f23bdc9f" name="Changes" comment="" />
+      <created>1788526956689</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788526956689</updated>
+      <workItem from="1788526956690" duration="3831000" />
+      <workItem from="1788536024695" duration="789000" />
+      <workItem from="1788536889322" duration="1040000" />
+      <workItem from="1788538708436" duration="255000" />
+      <workItem from="1788541151225" duration="146000" />
+      <workItem from="1788541503423" duration="785000" />
+      <workItem from="1788542372807" duration="436000" />
+      <workItem from="1788542943708" duration="3661000" />
+      <workItem from="1788546956179" duration="6816000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1788527283221</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1788527283221</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
 </project>
