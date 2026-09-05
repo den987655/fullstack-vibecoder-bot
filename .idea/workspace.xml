@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a918b1a6-2646-4f8d-b3ca-8146f23bdc9f" name="Changes" comment="init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04-clean-architecture/docs/c4-model/c4-component.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04-clean-architecture/docs/c4-model/c4-container.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04-clean-architecture/docs/c4-model/c4-context.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-clean-architecture/api/serverless.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-clean-architecture/src/infrastructure/server/FastifyApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/04-clean-architecture/src/infrastructure/server/FastifyApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-clean-architecture/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/04-clean-architecture/vercel.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,23 +32,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000049841686" />
-      <entry key="MS500" value="1.0218533762927884" />
-      <entry key="S2" value="1.3844852078175671" />
-      <entry key="S5" value="1.6822630547035806" />
-      <entry key="S10" value="1.8259921638269825" />
-      <entry key="S30" value="1.93826455252754" />
-      <entry key="S60" value="1.9686405694372637" />
-      <entry key="M2" value="1.9842212074348242" />
-      <entry key="M5" value="2.0395867805704606" />
-      <entry key="M10" value="2.99978262759665" />
-      <entry key="M15" value="5.7650718766264495" />
-      <entry key="M30" value="19.19466304587451" />
-      <entry key="H1" value="48.68188208355588" />
-      <entry key="H2" value="98.86538975799792" />
-      <entry key="H4" value="156.22280447757748" />
-      <entry key="D1" value="242.85100204497985" />
-      <entry key="W1" value="263.3735232790396" />
+      <entry key="MS100" value="1.0512759375607246" />
+      <entry key="MS500" value="2.0591726930717478" />
+      <entry key="S2" value="4.412804442370055" />
+      <entry key="S5" value="6.664402421366608" />
+      <entry key="S10" value="8.514651130876592" />
+      <entry key="S30" value="10.654425089956831" />
+      <entry key="S60" value="11.657290961430485" />
+      <entry key="M2" value="12.52085039940801" />
+      <entry key="M5" value="13.301325904196313" />
+      <entry key="M10" value="13.628993791397015" />
+      <entry key="M15" value="13.74752040192328" />
+      <entry key="M30" value="13.892954352437584" />
+      <entry key="H1" value="15.577797543522411" />
+      <entry key="H2" value="32.12955370409601" />
+      <entry key="H4" value="80.942384458576" />
+      <entry key="D1" value="224.8683777526039" />
+      <entry key="W1" value="272.1136990900806" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -56,37 +56,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="4.994649007538449E-125" />
-      <entry key="S60" value="1.217271725221356E-62" />
-      <entry key="M2" value="1.9083153601303408E-31" />
-      <entry key="M5" value="9.963797085295194E-13" />
-      <entry key="M10" value="1.7378959455771777E-6" />
-      <entry key="M15" value="2.1211620094400684E-4" />
-      <entry key="M30" value="0.02705597383268639" />
-      <entry key="H1" value="0.319400163119265" />
-      <entry key="H2" value="1.119945096873146" />
-      <entry key="H4" value="2.1111626218682593" />
-      <entry key="D1" value="3.5945194068907362" />
-      <entry key="W1" value="3.9393501015297603" />
+      <entry key="S30" value="1.2270221832077897E-301" />
+      <entry key="S60" value="6.033387989911675E-151" />
+      <entry key="M2" value="1.3434979435891883E-75" />
+      <entry key="M5" value="2.1750017888592168E-30" />
+      <entry key="M10" value="2.567681440894164E-15" />
+      <entry key="M15" value="2.751600765062741E-10" />
+      <entry key="M30" value="3.081548169930437E-5" />
+      <entry key="H1" value="0.010779237203429446" />
+      <entry key="H2" value="0.20574210571984924" />
+      <entry key="H4" value="0.9048673373419746" />
+      <entry key="D1" value="3.121174403843433" />
+      <entry key="W1" value="3.860683327704829" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9395227538322828" />
-      <entry key="MS500" value="1.009123518420109" />
-      <entry key="S2" value="1.3799079188801238" />
-      <entry key="S5" value="1.6799765614824225" />
-      <entry key="S10" value="1.8247389783875172" />
-      <entry key="S30" value="1.9378181966355597" />
-      <entry key="S60" value="1.9684135186644325" />
-      <entry key="M2" value="1.9841066760889148" />
-      <entry key="M5" value="2.0395317695922968" />
-      <entry key="M10" value="2.999701391881651" />
-      <entry key="M15" value="5.765157322489787" />
-      <entry key="M30" value="19.2214455681192" />
-      <entry key="H1" value="49.00045885632781" />
-      <entry key="H2" value="99.98383005148038" />
-      <entry key="H4" value="158.33243476178524" />
-      <entry key="D1" value="246.44504934765158" />
-      <entry key="W1" value="267.3127983255456" />
+      <entry key="MS100" value="0.9880322838682674" />
+      <entry key="MS500" value="2.0348883009186767" />
+      <entry key="S2" value="4.399433813518111" />
+      <entry key="S5" value="6.655585142310833" />
+      <entry key="S10" value="8.508756816425459" />
+      <entry key="S30" value="10.650955124551192" />
+      <entry key="S60" value="11.653599872073936" />
+      <entry key="M2" value="12.51755966258084" />
+      <entry key="M5" value="13.299370832928666" />
+      <entry key="M10" value="13.62787159555109" />
+      <entry key="M15" value="13.746736594911702" />
+      <entry key="M30" value="13.892574151626176" />
+      <entry key="H1" value="15.588338751216641" />
+      <entry key="H2" value="32.334912999145416" />
+      <entry key="H4" value="81.84654152090478" />
+      <entry key="D1" value="227.9891332609944" />
+      <entry key="W1" value="275.9743075804379" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -98,35 +98,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "01-version",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "E:/react/fullstack-vibecoder/fullstack-vibecoder-bot/03",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.set-webhook (1).executor": "Run",
-    "npm.set-webhook.executor": "Run",
-    "npm.start (1).executor": "Run",
-    "npm.start.executor": "Run",
-    "npm.tunnel.executor": "Run",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;01-version&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/react/fullstack-vibecoder/fullstack-vibecoder-bot/03&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.set-webhook (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.set-webhook.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;npm.tunnel.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\react\fullstack-vibecoder\fullstack-vibecoder-bot\03" />
@@ -220,7 +220,8 @@
       <workItem from="1788542372807" duration="436000" />
       <workItem from="1788542943708" duration="3661000" />
       <workItem from="1788546956179" duration="8419000" />
-      <workItem from="1788616010050" duration="6968000" />
+      <workItem from="1788616010050" duration="8141000" />
+      <workItem from="1788636414414" duration="3352000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
