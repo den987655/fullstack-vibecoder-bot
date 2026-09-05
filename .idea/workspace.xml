@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a918b1a6-2646-4f8d-b3ca-8146f23bdc9f" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/02/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/03/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-clean-architecture/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/04-clean-architecture/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,61 +32,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.4029515632417018" />
-      <entry key="MS500" value="3.6420792246266496" />
-      <entry key="S2" value="8.760686690888296" />
-      <entry key="S5" value="13.911619611114437" />
-      <entry key="S10" value="18.278237295415515" />
-      <entry key="S30" value="23.734526385964134" />
-      <entry key="S60" value="25.888849765806683" />
-      <entry key="M2" value="29.630760088336096" />
-      <entry key="M5" value="42.10172736158136" />
-      <entry key="M10" value="53.27339987518935" />
-      <entry key="M15" value="58.804008422132775" />
-      <entry key="M30" value="69.03630829206479" />
-      <entry key="H1" value="92.97117662342843" />
-      <entry key="H2" value="135.70826329335912" />
-      <entry key="H4" value="180.75036123570874" />
-      <entry key="D1" value="242.69189517634047" />
-      <entry key="W1" value="256.57328215272486" />
+      <entry key="MS100" value="1.0384732629492999" />
+      <entry key="MS500" value="1.5352608454763759" />
+      <entry key="S2" value="2.601965537148135" />
+      <entry key="S5" value="3.655093729194326" />
+      <entry key="S10" value="4.236724468555426" />
+      <entry key="S30" value="4.733122382991182" />
+      <entry key="S60" value="4.963219909227146" />
+      <entry key="M2" value="5.253191145714331" />
+      <entry key="M5" value="6.103747683189585" />
+      <entry key="M10" value="11.560947682496906" />
+      <entry key="M15" value="19.22310015661317" />
+      <entry key="M30" value="38.84393478348683" />
+      <entry key="H1" value="70.16243690206386" />
+      <entry key="H2" value="118.7532501845297" />
+      <entry key="H4" value="170.7602619125235" />
+      <entry key="D1" value="244.97483345651102" />
+      <entry key="W1" value="262.00819747317513" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
-      <entry key="S10" value="6.153481843289262E-253" />
-      <entry key="S30" value="1.6939971032849534E-84" />
-      <entry key="S60" value="2.241771682409252E-42" />
-      <entry key="M2" value="2.5897155723283462E-21" />
-      <entry key="M5" value="1.1258114035152827E-8" />
-      <entry key="M10" value="1.8473286022962013E-4" />
-      <entry key="M15" value="0.004759786027972269" />
-      <entry key="M30" value="0.12816515439776213" />
-      <entry key="H1" value="0.6951660128638165" />
-      <entry key="H2" value="1.6522411391396066" />
-      <entry key="H4" value="2.5642480708016016" />
-      <entry key="D1" value="3.7129054584454133" />
-      <entry key="W1" value="3.957628423325728" />
+      <entry key="S10" value="7.950427677843E-311" />
+      <entry key="S30" value="8.563852645415841E-104" />
+      <entry key="S60" value="5.0404538212174434E-52" />
+      <entry key="M2" value="3.883212875046685E-26" />
+      <entry key="M5" value="1.323857669100856E-10" />
+      <entry key="M10" value="2.003235374299584E-5" />
+      <entry key="M15" value="0.0010823788910869895" />
+      <entry key="M30" value="0.06111754586218105" />
+      <entry key="H1" value="0.4800500309528032" />
+      <entry key="H2" value="1.373005942684421" />
+      <entry key="H4" value="2.337542577875813" />
+      <entry key="D1" value="3.65606414209999" />
+      <entry key="W1" value="3.9489156892668547" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.3297070671560698" />
-      <entry key="MS500" value="3.603885184175871" />
-      <entry key="S2" value="8.738020861239745" />
-      <entry key="S5" value="13.897371275408233" />
-      <entry key="S10" value="18.26889954298238" />
-      <entry key="S30" value="23.7304800474019" />
-      <entry key="S60" value="25.886620170772414" />
-      <entry key="M2" value="29.629289514341956" />
-      <entry key="M5" value="42.10051142697911" />
-      <entry key="M10" value="53.27265966182808" />
-      <entry key="M15" value="58.8080036541171" />
-      <entry key="M30" value="69.16362822727237" />
-      <entry key="H1" value="93.66470185886678" />
-      <entry key="H2" value="137.35834666381007" />
-      <entry key="H4" value="183.3127763599424" />
-      <entry key="D1" value="246.4043173268928" />
-      <entry key="W1" value="260.5308357850364" />
+      <entry key="MS100" value="0.07437008654125271" />
+      <entry key="MS500" value="1.0491728250477512" />
+      <entry key="S2" value="2.446679051409142" />
+      <entry key="S5" value="3.588832761104186" />
+      <entry key="S10" value="4.202749808619938" />
+      <entry key="S30" value="4.721586819060947" />
+      <entry key="S60" value="4.957414753177382" />
+      <entry key="M2" value="5.250270130787932" />
+      <entry key="M5" value="6.102556779117607" />
+      <entry key="M10" value="11.56027715361803" />
+      <entry key="M15" value="19.223614673900467" />
+      <entry key="M30" value="38.904452008667825" />
+      <entry key="H1" value="70.64125518499782" />
+      <entry key="H2" value="120.12441366119214" />
+      <entry key="H4" value="173.09610890603727" />
+      <entry key="D1" value="248.63041757430176" />
+      <entry key="W1" value="265.9570379481457" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -116,8 +118,11 @@
     "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.set-webhook (1).executor": "Run",
     "npm.set-webhook.executor": "Run",
+    "npm.start (1).executor": "Run",
     "npm.start.executor": "Run",
+    "npm.tunnel.executor": "Run",
     "settings.editor.selected.configurable": "inlay.hints",
     "to.speed.mode.migration.done": "true"
   }
@@ -126,13 +131,37 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\react\fullstack-vibecoder\fullstack-vibecoder-bot\03" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\react\fullstack-vibecoder\fullstack-vibecoder-bot\04-clean-architecture" />
+      <recent name="E:\react\fullstack-vibecoder\fullstack-vibecoder-bot" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.set-webhook">
+    <configuration name="set-webhook (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/04-clean-architecture/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="set-webhook" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="set-webhook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/03/package.json" />
       <command value="run" />
       <scripts>
         <script value="set-webhook" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/04-clean-architecture/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -148,10 +177,23 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="tunnel" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/04-clean-architecture/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="tunnel" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.set-webhook" />
+        <item itemvalue="npm.start (1)" />
+        <item itemvalue="npm.set-webhook (1)" />
+        <item itemvalue="npm.tunnel" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.set-webhook" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +219,8 @@
       <workItem from="1788541503423" duration="785000" />
       <workItem from="1788542372807" duration="436000" />
       <workItem from="1788542943708" duration="3661000" />
-      <workItem from="1788546956179" duration="6816000" />
+      <workItem from="1788546956179" duration="8419000" />
+      <workItem from="1788616010050" duration="2292000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -192,6 +235,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
