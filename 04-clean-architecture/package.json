@@ -2,9 +2,9 @@
   "name": "04-clean-architecture",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "tunnel": "cloudflared tunnel --url http://localhost:3000",
     "set-webhook": "node set-webhook.js",
     "test": "echo \"Error: no test specified\" && exit 1"
