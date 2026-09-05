@@ -1,1 +1,1 @@
-// Упрощенная Точка сборки без Dependency Injectionrequire('./src/config/env');const server = require('./src/infrastructure/server/FastifyApp');async function bootstrap() {  await server.start();}bootstrap();
+require('./src/config/env');const server = require('./src/infrastructure/server/FastifyApp');async function bootstrap() {  await server.start();}bootstrap();
