@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a918b1a6-2646-4f8d-b3ca-8146f23bdc9f" name="Changes" comment="init">
+    <list default="true" id="a918b1a6-2646-4f8d-b3ca-8146f23bdc9f" name="Changes" comment="fix: simplify Vercel Fastify deployment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04-clean-architecture/api/serverless.js" beforeDir="false" afterPath="$PROJECT_DIR$/04-clean-architecture/api/serverless.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-clean-architecture/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/04-clean-architecture/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04-clean-architecture/src/infrastructure/server/FastifyApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/04-clean-architecture/src/infrastructure/server/FastifyApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04-clean-architecture/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/04-clean-architecture/vercel.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,23 +31,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0512759375607246" />
-      <entry key="MS500" value="2.0591726930717478" />
-      <entry key="S2" value="4.412804442370055" />
-      <entry key="S5" value="6.664402421366608" />
-      <entry key="S10" value="8.514651130876592" />
-      <entry key="S30" value="10.654425089956831" />
-      <entry key="S60" value="11.657290961430485" />
-      <entry key="M2" value="12.52085039940801" />
-      <entry key="M5" value="13.301325904196313" />
-      <entry key="M10" value="13.628993791397015" />
-      <entry key="M15" value="13.74752040192328" />
-      <entry key="M30" value="13.892954352437584" />
-      <entry key="H1" value="15.577797543522411" />
-      <entry key="H2" value="32.12955370409601" />
-      <entry key="H4" value="80.942384458576" />
-      <entry key="D1" value="224.8683777526039" />
-      <entry key="W1" value="272.1136990900806" />
+      <entry key="MS100" value="1.4204482076272602" />
+      <entry key="MS500" value="1.8492801764467632" />
+      <entry key="S2" value="3.1867718954747106" />
+      <entry key="S5" value="6.214268521566052" />
+      <entry key="S10" value="9.059295375467299" />
+      <entry key="S30" value="12.551439074558452" />
+      <entry key="S60" value="14.043530329393285" />
+      <entry key="M2" value="15.188975131670562" />
+      <entry key="M5" value="16.159868397134595" />
+      <entry key="M10" value="16.556465163990758" />
+      <entry key="M15" value="16.6987359471372" />
+      <entry key="M30" value="16.868301211171495" />
+      <entry key="H1" value="18.564070566507876" />
+      <entry key="H2" value="35.11583362570297" />
+      <entry key="H4" value="83.92541435786026" />
+      <entry key="D1" value="227.8605807785716" />
+      <entry key="W1" value="275.11235222723286" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -56,37 +55,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="1.2270221832077897E-301" />
-      <entry key="S60" value="6.033387989911675E-151" />
-      <entry key="M2" value="1.3434979435891883E-75" />
-      <entry key="M5" value="2.1750017888592168E-30" />
-      <entry key="M10" value="2.567681440894164E-15" />
-      <entry key="M15" value="2.751600765062741E-10" />
-      <entry key="M30" value="3.081548169930437E-5" />
-      <entry key="H1" value="0.010779237203429446" />
-      <entry key="H2" value="0.20574210571984924" />
-      <entry key="H4" value="0.9048673373419746" />
-      <entry key="D1" value="3.121174403843433" />
-      <entry key="W1" value="3.860683327704829" />
+      <entry key="S30" value="1.110899263013016E-301" />
+      <entry key="S60" value="5.740799597699543E-151" />
+      <entry key="M2" value="1.310516737818566E-75" />
+      <entry key="M5" value="2.1534849695537493E-30" />
+      <entry key="M10" value="2.554949116279798E-15" />
+      <entry key="M15" value="2.7424970157740734E-10" />
+      <entry key="M30" value="3.0764462516489896E-5" />
+      <entry key="H1" value="0.010770310267032906" />
+      <entry key="H2" value="0.20565689435126197" />
+      <entry key="H4" value="0.9046799353292632" />
+      <entry key="D1" value="3.121066659716778" />
+      <entry key="W1" value="3.860664288529472" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9880322838682674" />
-      <entry key="MS500" value="2.0348883009186767" />
-      <entry key="S2" value="4.399433813518111" />
-      <entry key="S5" value="6.655585142310833" />
-      <entry key="S10" value="8.508756816425459" />
-      <entry key="S30" value="10.650955124551192" />
-      <entry key="S60" value="11.653599872073936" />
-      <entry key="M2" value="12.51755966258084" />
-      <entry key="M5" value="13.299370832928666" />
-      <entry key="M10" value="13.62787159555109" />
-      <entry key="M15" value="13.746736594911702" />
-      <entry key="M30" value="13.892574151626176" />
-      <entry key="H1" value="15.588338751216641" />
-      <entry key="H2" value="32.334912999145416" />
-      <entry key="H4" value="81.84654152090478" />
-      <entry key="D1" value="227.9891332609944" />
-      <entry key="W1" value="275.9743075804379" />
+      <entry key="MS100" value="1.3720625271031848" />
+      <entry key="MS500" value="1.8359693586393755" />
+      <entry key="S2" value="3.1695102798148396" />
+      <entry key="S5" value="6.197557109227462" />
+      <entry key="S10" value="9.047202345893451" />
+      <entry key="S30" value="12.545217433423392" />
+      <entry key="S60" value="14.038406684432628" />
+      <entry key="M2" value="15.184940854582292" />
+      <entry key="M5" value="16.157598398493676" />
+      <entry key="M10" value="16.55518063460853" />
+      <entry key="M15" value="16.697842630958124" />
+      <entry key="M30" value="16.8678655033305" />
+      <entry key="H1" value="18.57457495479069" />
+      <entry key="H2" value="35.321093817789375" />
+      <entry key="H4" value="84.82937713887104" />
+      <entry key="D1" value="230.9812273860427" />
+      <entry key="W1" value="278.9729415114574" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -189,8 +188,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.set-webhook (1)" />
         <item itemvalue="npm.start (1)" />
+        <item itemvalue="npm.set-webhook (1)" />
         <item itemvalue="npm.tunnel" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.set-webhook" />
@@ -221,7 +220,7 @@
       <workItem from="1788542943708" duration="3661000" />
       <workItem from="1788546956179" duration="8419000" />
       <workItem from="1788616010050" duration="8141000" />
-      <workItem from="1788636414414" duration="6080000" />
+      <workItem from="1788636414414" duration="7823000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -231,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788527283221</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix: simplify Vercel Fastify deployment">
+      <option name="closed" value="true" />
+      <created>1788643677546</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1788643677546</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +257,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="fix: simplify Vercel Fastify deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: simplify Vercel Fastify deployment" />
   </component>
 </project>
