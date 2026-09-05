@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a918b1a6-2646-4f8d-b3ca-8146f23bdc9f" name="Changes" comment="init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-clean-architecture/api/serverless.js" beforeDir="false" afterPath="$PROJECT_DIR$/04-clean-architecture/api/serverless.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-clean-architecture/src/infrastructure/server/FastifyApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/04-clean-architecture/src/infrastructure/server/FastifyApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04-clean-architecture/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/04-clean-architecture/vercel.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +221,7 @@
       <workItem from="1788542943708" duration="3661000" />
       <workItem from="1788546956179" duration="8419000" />
       <workItem from="1788616010050" duration="8141000" />
-      <workItem from="1788636414414" duration="4723000" />
+      <workItem from="1788636414414" duration="6080000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
