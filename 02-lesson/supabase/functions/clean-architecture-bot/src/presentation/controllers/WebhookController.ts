@@ -24,11 +24,11 @@ export class WebhookController {
         const firstName = update.message.from?.first_name || "";
         const lastName = update.message.from?.last_name || "";
 
-        // Обработка сообщения идет в фоне
-        handleMessageUseCase.execute(chatId, text, firstName, lastName);
+        // Ждем завершения обработки сообщения перед возвратом 200 OK
+        await handleMessageUseCase.execute(chatId, text, firstName, lastName);
       }
       else if (update.callback_query) {
-        handleMessageUseCase.handleCallback(update.callback_query);
+        await handleMessageUseCase.handleCallback(update.callback_query);
       }
 
       return new Response(JSON.stringify({ status: "ok" }), {

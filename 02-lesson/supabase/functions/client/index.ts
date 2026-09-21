@@ -12,7 +12,7 @@ Deno.serve(async (req: Request) => {
 
   try {
     const supabaseUrl = Deno.env.get("SUPABASE_URL") ?? "";
-    const supabaseAnonKey = Deno.env.get("SUPABASE_ANON_KEY") ?? "";
+    const supabaseAnonKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
     
     const supabase = createClient(supabaseUrl, supabaseAnonKey);
     
@@ -35,3 +35,4 @@ Deno.serve(async (req: Request) => {
     });
   }
 });
+

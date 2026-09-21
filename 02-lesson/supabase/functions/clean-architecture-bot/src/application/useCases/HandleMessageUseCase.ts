@@ -4,11 +4,11 @@ import { supabaseRepository } from "../../infrastructure/database/SupabaseReposi
 
 export class HandleMessageUseCase {
   async execute(chatId: string | number, text: string, firstName: string = "", lastName: string = "") {
-    // Сохраняем сообщение от пользователя в БД
+    // РЎРѕС…СЂР°РЅСЏРµРј СЃРѕРѕР±С‰РµРЅРёРµ РѕС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РІ Р‘Р”
     await supabaseRepository.saveClientAndMessage(chatId, firstName, lastName, "user", text, "telegram");
 
     if (!text) {
-      const resp = "Отправьте текстовое сообщение.";
+      const resp = "РћС‚РїСЂР°РІСЊС‚Рµ С‚РµРєСЃС‚РѕРІРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ.";
       await messageSender.sendMessage(chatId, resp);
       await supabaseRepository.saveClientAndMessage(chatId, firstName, lastName, "bot", resp, "telegram");
       return;
@@ -21,7 +21,7 @@ export class HandleMessageUseCase {
     const currencyMatch = text.match(/[A-Za-z]{3}/);
 
     if (!currencyMatch) {
-      const resp = "Привет! Напиши мне сумму и код валюты.\n\nНапример: <b>100 EUR</b> или просто <b>GBP</b>.";
+      const resp = "РџСЂРёРІРµС‚! РќР°РїРёС€Рё РјРЅРµ СЃСѓРјРјСѓ Рё РєРѕРґ РІР°Р»СЋС‚С‹.\n\nРќР°РїСЂРёРјРµСЂ: <b>100 EUR</b> РёР»Рё РїСЂРѕСЃС‚Рѕ <b>GBP</b>.";
       await messageSender.sendMessage(chatId, resp);
       await supabaseRepository.saveClientAndMessage(chatId, firstName, lastName, "bot", resp, "telegram");
       return;
@@ -31,7 +31,7 @@ export class HandleMessageUseCase {
 
     try {
       if (currencyCode === "USD") {
-        const resp = `Это и есть американский доллар! ??\n<b>${amount} USD</b> = <b>${amount} USD</b>.`;
+        const resp = `Р­С‚Рѕ Рё РµСЃС‚СЊ Р°РјРµСЂРёРєР°РЅСЃРєРёР№ РґРѕР»Р»Р°СЂ! рџ’µ\n<b>${amount} USD</b> = <b>${amount} USD</b>.`;
         await messageSender.sendMessage(chatId, resp);
         await supabaseRepository.saveClientAndMessage(chatId, firstName, lastName, "bot", resp, "telegram");
         return;
@@ -41,7 +41,7 @@ export class HandleMessageUseCase {
       const rateVsBase = data.rates[currencyCode];
       
       if (!rateVsBase) {
-        const resp = `К сожалению, валюта <b>${currencyCode}</b> не найдена в базе ЕЦБ.\n\nПопробуйте популярные: EUR, GBP, JPY, AUD, CAD...`;
+        const resp = `Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РІР°Р»СЋС‚Р° <b>${currencyCode}</b> РЅРµ РЅР°Р№РґРµРЅР° РІ Р±Р°Р·Рµ Р•Р¦Р‘.\n\nРџРѕРїСЂРѕР±СѓР№С‚Рµ РїРѕРїСѓР»СЏСЂРЅС‹Рµ: EUR, GBP, JPY, AUD, CAD...`;
         await messageSender.sendMessage(chatId, resp);
         await supabaseRepository.saveClientAndMessage(chatId, firstName, lastName, "bot", resp, "telegram");
         return;
@@ -50,11 +50,11 @@ export class HandleMessageUseCase {
       const toUsd = (amount / rateVsBase).toFixed(2);
       const fromUsd = (amount * rateVsBase).toFixed(2);
 
-      const resp = `?? <b>Конвертация: ${currencyCode} - USD</b>\n                    \n?? <b>${amount} ${currencyCode}</b> = <b>${toUsd} USD</b>\n?? <b>${amount} USD</b> = <b>${fromUsd} ${currencyCode}</b>\n\n<i>Справочно: 1 USD = ${rateVsBase} ${currencyCode}</i>`;
+      const resp = `рџ’± <b>РљРѕРЅРІРµСЂС‚Р°С†РёСЏ: ${currencyCode} в†” USD</b>\n                    \nрџ’µ <b>${amount} ${currencyCode}</b> = <b>${toUsd} USD</b>\nрџ’µ <b>${amount} USD</b> = <b>${fromUsd} ${currencyCode}</b>\n\n<i>РЎРїСЂР°РІРѕС‡РЅРѕ: 1 USD = ${rateVsBase} ${currencyCode}</i>`;
 
       const replyMarkup = {
         inline_keyboard: [[
-          { text: "?? Обратный курс", callback_data: `rev|${currencyCode}|${amount}|${rateVsBase}` }
+          { text: "рџ”„ РћР±СЂР°С‚РЅС‹Р№ РєСѓСЂСЃ", callback_data: `rev|${currencyCode}|${amount}|${rateVsBase}` }
         ]]
       };
 
@@ -62,8 +62,8 @@ export class HandleMessageUseCase {
       await supabaseRepository.saveClientAndMessage(chatId, firstName, lastName, "bot", resp, "telegram");
 
     } catch (error: any) {
-      console.error("Ошибка в Use Case (execute):", error.message);
-      const resp = "Упс, не смог получить свежие курсы валют. Попробуйте позже!";
+      console.error("РћС€РёР±РєР° РІ Use Case (execute):", error.message);
+      const resp = "РЈРїСЃ, РЅРµ СЃРјРѕРі РїРѕР»СѓС‡РёС‚СЊ СЃРІРµР¶РёРµ РєСѓСЂСЃС‹ РІР°Р»СЋС‚. РџРѕРїСЂРѕР±СѓР№С‚Рµ РїРѕР·Р¶Рµ!";
       await messageSender.sendMessage(chatId, resp);
       await supabaseRepository.saveClientAndMessage(chatId, firstName, lastName, "bot", resp, "telegram");
     }
@@ -78,8 +78,8 @@ export class HandleMessageUseCase {
 
     if (!data) return;
 
-    // Считаем нажатие на инлайн кнопку сообщением от пользователя
-    await supabaseRepository.saveClientAndMessage(chatId, firstName, lastName, "user", `[кнопка] ${data}`, "telegram");
+    // РЎС‡РёС‚Р°РµРј РЅР°Р¶Р°С‚РёРµ РЅР° РёРЅР»Р°Р№РЅ РєРЅРѕРїРєСѓ СЃРѕРѕР±С‰РµРЅРёРµРј РѕС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+    await supabaseRepository.saveClientAndMessage(chatId, firstName, lastName, "user", `[РєРЅРѕРїРєР°] ${data}`, "telegram");
 
     try {
       if (data.startsWith("rev|") || data.startsWith("fwd|")) {
@@ -89,7 +89,7 @@ export class HandleMessageUseCase {
         const amount = parseFloat(parts[2]);
         const rateVsBase = parseFloat(parts[3]);
 
-        if (rateVsBase === 0) throw new Error("Деление на ноль недопустимо");
+        if (rateVsBase === 0) throw new Error("Р”РµР»РµРЅРёРµ РЅР° РЅРѕР»СЊ РЅРµРґРѕРїСѓСЃС‚РёРјРѕ");
 
         const toUsd = (amount / rateVsBase).toFixed(2);
         const fromUsd = (amount * rateVsBase).toFixed(2);
@@ -99,19 +99,19 @@ export class HandleMessageUseCase {
 
         if (mode === "rev") {
           const reverseRate = 1 / rateVsBase;
-          messageText = `?? <b>Обратный курс: USD - ${currencyCode}</b>\n                    \n?? <b>${toUsd} USD</b> = <b>${amount} ${currencyCode}</b>\n?? <b>${fromUsd} ${currencyCode}</b> = <b>${amount} USD</b>\n\n<i>Справочно: 1 ${currencyCode} = ${reverseRate.toFixed(5)} USD</i>`;
+          messageText = `рџ’± <b>РћР±СЂР°С‚РЅС‹Р№ РєСѓСЂСЃ: USD в†” ${currencyCode}</b>\n                    \nрџ’µ <b>${toUsd} USD</b> = <b>${amount} ${currencyCode}</b>\nрџ’µ <b>${fromUsd} ${currencyCode}</b> = <b>${amount} USD</b>\n\n<i>РЎРїСЂР°РІРѕС‡РЅРѕ: 1 ${currencyCode} = ${reverseRate.toFixed(5)} USD</i>`;
 
           replyMarkup = {
             inline_keyboard: [[
-              { text: "?? Прямой курс", callback_data: `fwd|${currencyCode}|${amount}|${rateVsBase}` }
+              { text: "рџ”™ РџСЂСЏРјРѕР№ РєСѓСЂСЃ", callback_data: `fwd|${currencyCode}|${amount}|${rateVsBase}` }
             ]]
           };
         } else {
-          messageText = `?? <b>Конвертация: ${currencyCode} - USD</b>\n                    \n?? <b>${amount} ${currencyCode}</b> = <b>${toUsd} USD</b>\n?? <b>${amount} USD</b> = <b>${fromUsd} ${currencyCode}</b>\n\n<i>Справочно: 1 USD = ${rateVsBase} ${currencyCode}</i>`;
+          messageText = `рџ’± <b>РљРѕРЅРІРµСЂС‚Р°С†РёСЏ: ${currencyCode} в†” USD</b>\n                    \nрџ’µ <b>${amount} ${currencyCode}</b> = <b>${toUsd} USD</b>\nрџ’µ <b>${amount} USD</b> = <b>${fromUsd} ${currencyCode}</b>\n\n<i>РЎРїСЂР°РІРѕС‡РЅРѕ: 1 USD = ${rateVsBase} ${currencyCode}</i>`;
 
           replyMarkup = {
             inline_keyboard: [[
-              { text: "?? Обратный курс", callback_data: `rev|${currencyCode}|${amount}|${rateVsBase}` }
+              { text: "рџ”„ РћР±СЂР°С‚РЅС‹Р№ РєСѓСЂСЃ", callback_data: `rev|${currencyCode}|${amount}|${rateVsBase}` }
             ]]
           };
         }
@@ -121,11 +121,11 @@ export class HandleMessageUseCase {
         
         await supabaseRepository.saveClientAndMessage(chatId, firstName, lastName, "bot", messageText, "telegram");
       } else {
-        await messageSender.answerCallbackQuery(query.id, "Неизвестная кнопка", true);
+        await messageSender.answerCallbackQuery(query.id, "РќРµРёР·РІРµСЃС‚РЅР°СЏ РєРЅРѕРїРєР°", true);
       }
     } catch (error: any) {
-      console.error("Ошибка в Use Case (handleCallback):", error.message);
-      await messageSender.answerCallbackQuery(query.id, "Ошибка при пересчете курса", true);
+      console.error("РћС€РёР±РєР° РІ Use Case (handleCallback):", error.message);
+      await messageSender.answerCallbackQuery(query.id, "РћС€РёР±РєР° РїСЂРё РїРµСЂРµСЃС‡РµС‚Рµ РєСѓСЂСЃР°", true);
     }
   }
 }
