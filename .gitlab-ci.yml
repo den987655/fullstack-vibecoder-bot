@@ -1,1 +1,1 @@
-image: node:20stages:  - deploydeploy-bot:  stage: deploy  script:    - npm ci    - npx supabase functions deploy clean-architecture-bot --project-ref $SUPABASE_PROJECT_ID
+image: node:20stages:  - deploydeploy-bot:  stage: deploy  script:    - cd 02-lesson    - npm ci    - npx supabase functions deploy clean-architecture-bot --project-ref $SUPABASE_PROJECT_ID
