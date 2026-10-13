@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a918b1a6-2646-4f8d-b3ca-8146f23bdc9f" name="Changes" comment="ci: add supabase deploy">
+    <list default="true" id="a918b1a6-2646-4f8d-b3ca-8146f23bdc9f" name="Changes" comment="ci: fixed pipeline config to root">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-lesson/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="43" />
+    <option name="cachedIndexableFilesCount" value="68" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -42,23 +41,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000000000000007" />
-      <entry key="MS500" value="1.0014760936799962" />
-      <entry key="S2" value="1.1960101135189345" />
-      <entry key="S5" value="1.5210883840123506" />
-      <entry key="S10" value="1.7218645191532485" />
-      <entry key="S30" value="1.8970539551174024" />
-      <entry key="S60" value="1.9471293233330929" />
-      <entry key="M2" value="1.9732056942564058" />
-      <entry key="M5" value="1.98919487251972" />
-      <entry key="M10" value="1.9945827630461943" />
-      <entry key="M15" value="1.9963854636092988" />
-      <entry key="M30" value="2.002171392409334" />
-      <entry key="H1" value="2.5659389490882374" />
-      <entry key="H2" value="9.344842218737787" />
-      <entry key="H4" value="36.39564461286176" />
-      <entry key="D1" value="266.7352194451584" />
-      <entry key="W1" value="422.8056679408924" />
+      <entry key="MS100" value="1.2386278901942487" />
+      <entry key="MS500" value="1.9666061866328657" />
+      <entry key="S2" value="3.034598720554977" />
+      <entry key="S5" value="5.552728820127669" />
+      <entry key="S10" value="8.963439513853348" />
+      <entry key="S30" value="14.413422557646667" />
+      <entry key="S60" value="17.015989949076115" />
+      <entry key="M2" value="18.99169844003956" />
+      <entry key="M5" value="20.76059560971246" />
+      <entry key="M10" value="22.76718876796358" />
+      <entry key="M15" value="26.751175225835276" />
+      <entry key="M30" value="46.969411278738725" />
+      <entry key="H1" value="86.48617259410689" />
+      <entry key="H2" value="133.3945568492803" />
+      <entry key="H4" value="186.05325885973323" />
+      <entry key="D1" value="447.3743308246019" />
+      <entry key="W1" value="628.2379442069314" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -66,37 +65,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="3.52823039949621E-226" />
-      <entry key="M5" value="1.2740532824432798E-90" />
-      <entry key="M10" value="1.965192637268277E-45" />
-      <entry key="M15" value="2.3022973435756254E-30" />
-      <entry key="M30" value="2.818752577395138E-15" />
-      <entry key="H1" value="1.0309367627542343E-7" />
-      <entry key="H2" value="6.362754683147349E-4" />
-      <entry key="H4" value="0.05032061165182035" />
-      <entry key="D1" value="1.9283159932663552" />
-      <entry key="W1" value="3.6040189102157485" />
+      <entry key="S30" value="5.42826230922795E-110" />
+      <entry key="S60" value="2.329863152467968E-55" />
+      <entry key="M2" value="4.8268656004367515E-28" />
+      <entry key="M5" value="1.1843118713121164E-11" />
+      <entry key="M10" value="3.4413832557739363E-6" />
+      <entry key="M15" value="2.2794077866540322E-4" />
+      <entry key="M30" value="0.015097707728837671" />
+      <entry key="H1" value="0.1228727424656826" />
+      <entry key="H2" value="0.3507550745826802" />
+      <entry key="H4" value="0.6218483710724854" />
+      <entry key="D1" value="2.6833399102649778" />
+      <entry key="W1" value="4.546913573650484" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9330329915368136" />
-      <entry key="MS500" value="0.9876744177801589" />
-      <entry key="S2" value="1.1913989289092912" />
-      <entry key="S5" value="1.5184764468390357" />
-      <entry key="S10" value="1.7203215038991435" />
-      <entry key="S30" value="1.8964706540315863" />
-      <entry key="S60" value="1.946827815400726" />
-      <entry key="M2" value="1.9730523735905083" />
-      <entry key="M5" value="1.9891329147109083" />
-      <entry key="M10" value="1.9945516780716388" />
-      <entry key="M15" value="1.9963647166250018" />
-      <entry key="M30" value="2.002160871360594" />
-      <entry key="H1" value="2.565922519862336" />
-      <entry key="H2" value="9.345395330889316" />
-      <entry key="H4" value="36.44574932654304" />
-      <entry key="D1" value="268.6631443277213" />
-      <entry key="W1" value="426.4095916286678" />
+      <entry key="MS100" value="1.179967097249509" />
+      <entry key="MS500" value="1.947910640343659" />
+      <entry key="S2" value="3.0268447498672764" />
+      <entry key="S5" value="5.545491334051293" />
+      <entry key="S10" value="8.957249100027127" />
+      <entry key="S30" value="14.410149665369051" />
+      <entry key="S60" value="17.014095911249715" />
+      <entry key="M2" value="18.990660877324054" />
+      <entry key="M5" value="20.76014846916235" />
+      <entry key="M10" value="22.766938759951046" />
+      <entry key="M15" value="26.751165101038236" />
+      <entry key="M30" value="46.9840825925604" />
+      <entry key="H1" value="86.6083704007855" />
+      <entry key="H2" value="133.74461437101925" />
+      <entry key="H4" value="186.67449662377638" />
+      <entry key="D1" value="450.05720173085945" />
+      <entry key="W1" value="632.7847470341169" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -108,36 +107,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;deno&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/react/fullstack-vibecoder/fullstack-vibecoder-bot/02-lesson/sql&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.set-webhook (1).executor&quot;: &quot;Run&quot;,
-    &quot;npm.set-webhook.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start (1).executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;npm.tunnel.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.runtime&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2026.2.0.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "deno",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "E:/react/fullstack-vibecoder/fullstack-vibecoder-bot/02-lesson/sql",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.db:push.executor": "Run",
+    "npm.dev.executor": "Run",
+    "npm.set-webhook (1).executor": "Run",
+    "npm.set-webhook.executor": "Run",
+    "npm.start (1).executor": "Run",
+    "npm.start.executor": "Run",
+    "npm.tunnel.executor": "Run",
+    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2026.2.0.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\react\fullstack-vibecoder\fullstack-vibecoder-bot\02-lesson\sql" />
@@ -151,12 +152,22 @@
       <recent name="E:\react\fullstack-vibecoder\fullstack-vibecoder-bot\04-clean-architecture" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.set-webhook">
-    <configuration name="set-webhook (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/04-clean-architecture/package.json" />
+  <component name="RunManager" selected="npm.db:push">
+    <configuration name="db:push" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/02-lesson/package.json" />
       <command value="run" />
       <scripts>
-        <script value="set-webhook" />
+        <script value="db:push" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/02-lesson/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -167,6 +178,16 @@
       <command value="run" />
       <scripts>
         <script value="set-webhook" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/04-clean-architecture/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -204,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.db:push" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.tunnel" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.start (1)" />
-        <item itemvalue="npm.set-webhook" />
-        <item itemvalue="npm.set-webhook (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +270,12 @@
       <workItem from="1789127724329" duration="9340000" />
       <workItem from="1789995109964" duration="5051000" />
       <workItem from="1790279603737" duration="612000" />
-      <workItem from="1790343640661" duration="3288000" />
+      <workItem from="1790343640661" duration="8106000" />
+      <workItem from="1790705726107" duration="4163000" />
+      <workItem from="1791299774813" duration="8091000" />
+      <workItem from="1791464355691" duration="2758000" />
+      <workItem from="1791836659216" duration="3277000" />
+      <workItem from="1791885769799" duration="4974000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -275,7 +301,23 @@
       <option name="project" value="LOCAL" />
       <updated>1790346250588</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ci: move pipeline config to root">
+      <option name="closed" value="true" />
+      <created>1790354351884</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1790354351884</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ci: fixed pipeline config to root">
+      <option name="closed" value="true" />
+      <created>1790355479642</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1790355479642</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +338,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="fix: simplify Vercel Fastify deployment" />
     <MESSAGE value="ci: add supabase deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="ci: add supabase deploy" />
+    <MESSAGE value="ci: move pipeline config to root" />
+    <MESSAGE value="ci: fixed pipeline config to root" />
+    <option name="LAST_COMMIT_MESSAGE" value="ci: fixed pipeline config to root" />
   </component>
 </project>
