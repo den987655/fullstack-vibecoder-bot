@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a918b1a6-2646-4f8d-b3ca-8146f23bdc9f" name="Changes" comment="ci: fixed pipeline config to root">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-lesson/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/02-lesson/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-lesson/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/02-lesson/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-lesson/frontend/src/pages/messenger/api/messageQueries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/02-lesson/frontend/src/pages/messenger/api/messageQueries.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-lesson/supabase/functions/messages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/02-lesson/supabase/functions/messages/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent.md" beforeDir="false" afterPath="$PROJECT_DIR$/agent.md" afterDir="false" />
-    </list>
+    <list default="true" id="a918b1a6-2646-4f8d-b3ca-8146f23bdc9f" name="Changes" comment="ci: fixed pipeline config to root" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -280,7 +273,7 @@
       <workItem from="1791299774813" duration="8091000" />
       <workItem from="1791464355691" duration="2758000" />
       <workItem from="1791836659216" duration="3277000" />
-      <workItem from="1791885769799" duration="11021000" />
+      <workItem from="1791885769799" duration="11793000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
