@@ -16,11 +16,21 @@ Deno.serve(async (req: Request) => {
     
     const supabase = createClient(supabaseUrl, supabaseAnonKey);
     
-    // Возвращаем все сообщения, сортируя от самых новых (по created_at)
-    const { data, error } = await supabase
+    // Получаем параметр clientId из строки запроса
+    const url = new URL(req.url);
+    const clientId = url.searchParams.get("clientId");
+
+    let query = supabase
       .from("messages")
       .select("*")
       .order("created_at", { ascending: false });
+
+    // Если передан конкретный клиент, фильтруем сообщения по нему
+    if (clientId) {
+      query = query.eq("client_id", clientId);
+    }
+
+    const { data, error } = await query;
     
     if (error) throw error;
 
@@ -35,4 +45,3 @@ Deno.serve(async (req: Request) => {
     });
   }
 });
-
