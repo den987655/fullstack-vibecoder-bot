@@ -1,0 +1,2 @@
+# Enforce LF line endings for SQL files (required by Supabase CLI on Windows)
+*.sql text eol=lf

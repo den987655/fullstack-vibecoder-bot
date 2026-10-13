@@ -1,0 +1,1 @@
+import { QueryProvider } from './providers/QueryProvider';import { MessengerPage } from '../pages/messenger';import './styles.css';export const App = () => {  return (    <QueryProvider>      <MessengerPage />    </QueryProvider>  );};

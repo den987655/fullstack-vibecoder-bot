@@ -1,0 +1,1 @@
+export interface Dialog {  id: number;  created_at: string;  user_telegram_id: string;  first_name: string | null;  last_name: string | null;  last_message_at: string;}

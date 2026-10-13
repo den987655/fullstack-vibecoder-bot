@@ -1,0 +1,1 @@
+export interface Message {  id: number;  created_at: string;  author: string;  body: string;  messanger_user_id: string;  messenger_type: string;  client_id: number;}

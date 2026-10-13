@@ -1,0 +1,1 @@
+import { create } from 'zustand';interface MessengerState {  selectedDialogId: number | null;  setSelectedDialogId: (id: number | null) => void;}export const useMessengerStore = create<MessengerState>((set) => ({  selectedDialogId: null,  setSelectedDialogId: (id) => set({ selectedDialogId: id }),}));

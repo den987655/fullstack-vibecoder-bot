@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "db:push": "supabase db push",
+    "db:pull": "supabase db pull",
+    "db:reset": "supabase db reset",
+    "db:link": "supabase link",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
