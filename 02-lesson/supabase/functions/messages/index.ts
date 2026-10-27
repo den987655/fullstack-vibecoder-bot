@@ -1,9 +1,4 @@
-﻿import { createClient } from "npm:@supabase/supabase-js@2";
-
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-};
+﻿import { corsHeaders, requireAuth } from "../_shared/auth.ts";
 
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") {
@@ -11,11 +6,9 @@ Deno.serve(async (req: Request) => {
   }
 
   try {
-    const supabaseUrl = Deno.env.get("SUPABASE_URL") ?? "";
-    const supabaseAnonKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
-    
-    const supabase = createClient(supabaseUrl, supabaseAnonKey);
-    
+    // Проверка авторизации: доступ к сообщениям только для авторизованных пользователей
+    const { supabaseClient: supabase } = await requireAuth(req);
+
     // Получаем параметр clientId из строки запроса
     const url = new URL(req.url);
     const clientId = url.searchParams.get("clientId");
@@ -31,7 +24,7 @@ Deno.serve(async (req: Request) => {
     }
 
     const { data, error } = await query;
-    
+
     if (error) throw error;
 
     return new Response(JSON.stringify(data ?? []), {
@@ -39,6 +32,9 @@ Deno.serve(async (req: Request) => {
       status: 200,
     });
   } catch (error: any) {
+    if (error instanceof Response) {
+      return error;
+    }
     return new Response(JSON.stringify({ error: error.message }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
       status: 500,
