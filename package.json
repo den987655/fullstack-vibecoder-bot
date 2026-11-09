@@ -1,1 +1,13 @@
-{}
+{
+  "name": "fullstack-vibecoder-bot",
+  "version": "1.0.0",
+  "description": "Console echo chat application with customizable cloud code logic",
+  "main": "chat.js",
+  "scripts": {
+    "start": "node chat.js",
+    "chat": "node chat.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
