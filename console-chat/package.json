@@ -1,0 +1,1 @@
+{  "name": "console-chat",  "version": "1.0.0",  "description": "Simple console chat application with Google Gemini LLM",  "main": "chat.js",  "scripts": {    "start": "node chat.js",    "chat": "node chat.js"  },  "keywords": ["gemini", "console", "chat", "llm"],  "author": "",  "license": "ISC"}

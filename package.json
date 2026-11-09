@@ -1,1 +1,12 @@
-{}
+{
+  "name": "fullstack-vibecoder-bot",
+  "version": "1.0.0",
+  "description": "Fullstack vibecoder bot and console chat",
+  "scripts": {
+    "chat": "node console-chat/chat.js",
+    "start": "node console-chat/chat.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
