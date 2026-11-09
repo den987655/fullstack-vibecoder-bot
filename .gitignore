@@ -9,3 +9,7 @@ node_modules/
 *.env.*
 .env.example
 *.env.example
+
+# Chat runtime memory
+memory.json
+console-chat/memory.json
