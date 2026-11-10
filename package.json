@@ -1,11 +1,14 @@
 {
   "name": "fullstack-vibecoder-bot",
   "version": "1.0.0",
-  "description": "Console echo chat application with customizable cloud code logic",
-  "main": "chat.js",
+  "description": "Fullstack vibecoder bot and console chat",
   "scripts": {
-    "start": "node chat.js",
-    "chat": "node chat.js"
+    "chat": "node console-chat/chat.js",
+    "start": "node console-chat/chat.js",
+    "debug": "node --inspect console-chat/chat.js",
+    "debug:brk": "node --inspect-brk console-chat/chat.js",
+    "debug:chrome": "node console-chat/debug-chrome.js",
+    "debug:chrome:brk": "node console-chat/debug-chrome.js --brk"
   },
   "keywords": [],
   "author": "",
