@@ -4,6 +4,7 @@
   "description": "Fullstack vibecoder bot and console chat",
   "scripts": {
     "chat": "node console-chat/chat.js",
+    "chat:rich": "node console-chat/rich-chat.js",
     "start": "node console-chat/chat.js",
     "debug": "node --inspect console-chat/chat.js",
     "debug:brk": "node --inspect-brk console-chat/chat.js",
